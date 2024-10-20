@@ -40,7 +40,7 @@ const questions = [
           }).start();
 
           let pipe = request(
-            https://drive.google.com/file/d/1vwrrO6etxa6v0Lan7Vf9jx8yzwfTXCzC/view?usp=drivesdk
+            "https://drive.google.com/file/d/1vwrrO6etxa6v0Lan7Vf9jx8yzwfTXCzC/view?usp=drivesdk"
           ).pipe(
             fs.createWriteStream("./shuaib-resume.pdf") // Change the file extension to .pdf
           );
