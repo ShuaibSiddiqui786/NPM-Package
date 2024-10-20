@@ -30,6 +30,13 @@ const questions = [
         },
       },
       {
+        name: `View my ${chalk.blue.bold("Resume")}?`,
+        value: () => {
+          open("https://drive.google.com/file/d/1vwrrO6etxa6v0Lan7Vf9jx8yzwfTXCzC/view?usp=drivesdk");
+          console.log("\nOpening resume in your browser.\n");
+        },
+      },
+      {
         name: `Download my ${chalk.magentaBright.bold("Resume")}?`,
 
         value: () => {
@@ -74,7 +81,7 @@ const data = {
   npx: chalk.red("npx") + " " + chalk.white("shuaibsiddiqui"),
 
   labelWork: chalk.red.bold("           I am a FullStack Developer"),
-  labelWork: chalk.red.bold("          Learning DevSecOps and MLOps"),
+  labelLearn: chalk.red.bold("          Learning DevSecOps and MLOps"),
   labelLinkedIn: chalk.white.bold("   LinkedIn:"),
   labelGitHub: chalk.white.bold("     GitHub:"),
   labelTwitter: chalk.white.bold("    Twitter:"),
@@ -88,6 +95,8 @@ const me = boxen(
     `${data.name}`,
     ``,
     `${data.labelWork}`,
+    ``,
+    `${data.labelLearn}`,
     ``,
     `${data.labelLinkedIn}  ${data.linkedin}`,
     `${data.labelGitHub}  ${data.github}`,
