@@ -69,7 +69,7 @@ const data = {
   linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("shuaibsiddiqui"),
   github: chalk.gray("https://github.com/") + chalk.green("shuaibsiddiqui786"),
   twitter: chalk.gray("https://twitter.com/") + chalk.cyan("sereneshuaib"),
-  codepen: chalk.gray("https://codepen.io/") + chalk.red("Shuaib-Siddiqui")
+  codepen: chalk.gray("https://codepen.io/") + chalk.red("Shuaib-Siddiqui"),
   web: chalk.cyan("https://shuaib-siddiqui-portfolio.framer.ai/"),
   npx: chalk.red("npx") + " " + chalk.white("shuaibsiddiqui"),
 
