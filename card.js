@@ -40,13 +40,13 @@ const questions = [
           }).start();
 
           let pipe = request(
-            "https://student-management-system-ir8t.vercel.app//api/resume"
+            https://drive.google.com/file/d/1vwrrO6etxa6v0Lan7Vf9jx8yzwfTXCzC/view?usp=drivesdk
           ).pipe(
-            fs.createWriteStream("./mohdjami-resume.pdf") // Change the file extension to .pdf
+            fs.createWriteStream("./shuaib-resume.pdf") // Change the file extension to .pdf
           );
 
           pipe.on("finish", function () {
-            let downloadPath = path.join(process.cwd(), "mohdjami-resume.pdf"); // Change the file extension to .pdf
+            let downloadPath = path.join(process.cwd(), "shuaib-resume.pdf"); // Change the file extension to .pdf
             console.log(`\nResume Downloaded at ${downloadPath} \n`);
             open(downloadPath);
             loader.stop();
@@ -64,18 +64,21 @@ const questions = [
 ];
 
 const data = {
-  name: chalk.bold.green("               Shuaib Siddiqui"),
+  name: chalk.bold.green("                 Shuaib Siddiqui"),
   handle: chalk.white("@shuaibsiddiqui786"),
   linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("shuaibsiddiqui"),
   github: chalk.gray("https://github.com/") + chalk.green("shuaibsiddiqui786"),
   twitter: chalk.gray("https://twitter.com/") + chalk.cyan("sereneshuaib"),
+  codepen: chalk.gray("https://codepen.io/") + chalk.red("Shuaib-Siddiqui")
   web: chalk.cyan("https://shuaib-siddiqui-portfolio.framer.ai/"),
-  npx: chalk.red("npx") + " " + chalk.white("Shuaib"),
+  npx: chalk.red("npx") + " " + chalk.white("shuaibsiddiqui"),
 
-  labelWork: chalk.red.bold("        I am a FullStack Developer"),
+  labelWork: chalk.red.bold("           I am a FullStack Developer"),
+  labelWork: chalk.red.bold("          Learning DevSecOps and MLOps"),
   labelLinkedIn: chalk.white.bold("   LinkedIn:"),
   labelGitHub: chalk.white.bold("     GitHub:"),
   labelTwitter: chalk.white.bold("    Twitter:"),
+  labelcodepen: chalk.white.bold("    Codepen:"),
   labelWeb: chalk.white.bold("        Web:"),
   labelCard: chalk.white.bold("       Card:"),
 };
@@ -89,14 +92,15 @@ const me = boxen(
     `${data.labelLinkedIn}  ${data.linkedin}`,
     `${data.labelGitHub}  ${data.github}`,
     `${data.labelTwitter}  ${data.twitter}`,
+    `${data.labelcodepen}  ${data.codepen}`,
     `${data.labelWeb}  ${data.web}`,
     ``,
     `${data.labelCard}  ${data.npx}`,
     ``,
-    `${chalk.italic("I am currently looking for new opportunities,")}`,
-    `${chalk.italic("my inbox is always open. Whether you have a")}`,
-    `${chalk.italic("question or just want to say hi, I will try ")}`,
-    `${chalk.italic("my best to get back to you!")}`,
+    `${chalk.italic("  I am currently looking for new opportunities,")}`,
+    `${chalk.italic("  my inbox is always open. Whether you have a")}`,
+    `${chalk.italic("  question or just want to say hi, I will try ")}`,
+    `${chalk.italic("  my best to get back to you!")}`,
   ].join("\n"),
   {
     margin: 1,
