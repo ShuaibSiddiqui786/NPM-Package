@@ -14,5 +14,5 @@ Explore who I am, straight from the console.
 
 ##### STEPS TO CREATE YOUR OWN
 
-The article written by @jackboberg. I used the same for the reference to deploy the package.
+The article written by @jackoberg. I used the same for the reference to deploy the package.
 [Write a Simple npx Business Card](https://studioelsa.se/blog/open-source-oss-npx-business-card).
